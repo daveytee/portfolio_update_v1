@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
    </head>
     <body>
-       
+
        <div class="main-nav">
         <ul class="nav">
           <li class="name">David Thompson</li>
@@ -17,13 +17,31 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
-    
+
     <header>
       <img src="images/me.png" alt="Picture of David Thompson" class="profile-image">
       <h1 class="tag name">Hello, I’m David.</h1>
       <p class="tag location">My home is Sheffield, South Yorkshire.</p>
     </header>
-    
+
+    <section>
+      <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+	<div class="row">
+		<label for="name">Your name:</label><br />
+		<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+	</div>
+	<div class="row">
+		<label for="email">Your email:</label><br />
+		<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+	</div>
+	<div class="row">
+		<label for="message">Your message:</label><br />
+		<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+	</div>
+	<input id="submit_button" type="submit" value="Send email" />
+</form>						
+    </section>
+
     <footer>
       <ul>
         <li><a href="https://twitter.com/DaveyTee25" class="social twitter" target="_blank">Twitter</a></li>
